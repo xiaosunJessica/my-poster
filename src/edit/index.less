@@ -1,0 +1,148 @@
+:local(.edit) {
+	// background: #FFFFFF;
+	display: flex;
+	.menu-wrapper {
+		width: 420px;
+		display: flex;
+		min-height: 300px;
+		.menu {
+			position: relative;
+			width: 120px;
+			background: #E5E5E5;
+			text-align: center;
+			margin-right: 5px;
+			ul {
+				width: 120px;
+				li {
+					height: 50px;
+					line-height: 50px;
+					text-align: center;
+					cursor: pointer;
+					&.active {
+						background: #FFFFFF;
+					}
+				}
+			}
+			.btn-group {
+				position: absolute;
+				bottom: 20px;
+				text-align: center;
+				width: 100%;
+			}
+		}
+		.menu-res {
+			background: #f8f8f8;
+			flex: 1;
+			padding: 12px;
+			margin-right: 5px;
+			overflow: hidden;
+			.ant-upload {
+				width: 100%;
+			}
+			.ant-btn {
+				width: 100%;
+			}
+		}
+	}
+	.content {
+		flex: 1;
+		display: flex;
+		background: #ebeced;
+		padding: 24px 0 24px 24px;
+		text-align: center;
+
+		.bg-img {
+			width: 375px;
+			background: #FFFFFF;
+			min-height: 667px;
+			overflow: hidden;
+			position: relative;
+			margin: 0 auto;
+			>img {
+				width: 100%;
+				height: auto;
+				overflow: hidden;
+			}
+			.drag-box {
+				position: relative;
+				.textarea {
+					padding: 4px 8px;
+					resize: both;
+					font-size: inherit;
+					color: inherit;
+					opacity: 0.8;
+				}
+				.text {
+					width: 100%;
+					height: 100%;
+					overflow: hidden;
+					word-break: break-all;
+					text-align: left;
+				}
+				.anticon-close-circle-o {
+					display: none;
+					position: absolute;
+					right: -8px;
+					top: -8px;
+					font-size: 16px;
+					color: #717171;
+				}
+				&:hover {
+					.anticon-close-circle-o {
+						display: block;
+					}
+				}
+			}
+			.drag-img {
+				img {
+					width: 100%;
+					height: 100%;
+				}
+				.anticon-close-circle-o {
+					display: none;
+					position: absolute;
+					right: -8px;
+					top: -8px;
+					font-size: 16px;
+					color: #717171;
+				}
+				&:hover {
+					.anticon-close-circle-o {
+						display: block;
+					}
+				}
+			}
+		}
+
+		.btn-add {
+			margin: 24px auto;
+		}
+	}
+}
+
+
+:local(.colorFontSize) {
+	min-width: 220px;
+	margin-left: 12px;
+	.item {
+		// padding: 0 0 12px 12px;
+		margin-bottom: 24px;
+		text-align: left;
+		margin: 8px 0;
+		.title {
+			height: 35px;
+			line-height: 35px;
+			border-radius: 4px;
+			font-size: 18px;
+			margin-bottom: 12px;
+			padding: 0 8px;
+			border: 1px solid #d2d5dc;
+			.icon-arrow {
+				color: #727483;
+			}
+			&.active {
+				background: #FFFFFF;
+			}
+		}
+	}
+}
